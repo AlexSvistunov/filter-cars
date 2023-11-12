@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.car {
+  padding: 120px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.list-reset {
+  margin: 0;
+  list-style: none;
+}
+
+.car__list {
+  padding: 50px 0;
+  margin: 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12,1fr);
+
+}
+
+.car__item {
+  transform: scale(1);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 4 span;
+  background-color: aliceblue;
+  box-shadow: 4px 10px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.35s ease, transform 0.35s ease-in-out;
+
+}
+
+.car__item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 18px 20px 0px rgba(34, 60, 80, 0.45);
+  transition: box-shadow 0.35s ease-in-out, transform 0.35s ease-in-out;
+}
+
+.car__item img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.car__item-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.car__item-price {
+  margin: 0;
+}
